@@ -1,7 +1,7 @@
 //building the classic snake game.
 // x rows >>>>
 
-//y colums
+//y 
 //down the way
 
 
