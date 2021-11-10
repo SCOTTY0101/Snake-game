@@ -49,7 +49,7 @@ let game = {
             let result = snake.move();
             if (result == 'gameover') {
                 alert(`Game over. You scored: ${game.score}`);
-               // location.reload();
+               // location.reload(); //auto reload is turn off.
                 return;
             }
             graphics.drawGame();
