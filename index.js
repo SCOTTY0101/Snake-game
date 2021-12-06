@@ -196,7 +196,7 @@ let graphics = {
         game.rottenApple.forEach((rottenApple) => { 
            axisX = rottenApple.x * graphics.square;
            axisY = rottenApple.y * graphics.square;
-           ctx.fillStyle = '#B8860B '; //'DarkGoldenRod'
+           ctx.fillStyle = '#B8860B '; //'DarkGoldenRod' medium dark shade of yellow.
            ctx.fillRect(axisX, axisY, graphics.square, graphics.square);
         })
     },
