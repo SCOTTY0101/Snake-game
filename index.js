@@ -184,7 +184,8 @@ let graphics = {
         });
     },
     
-  /*  drawAllGameGraphics : function(ctx, parameterTwo, color) {
+    //All game graphics use this function with parameters and arguments.
+    drawAllGameGraphics : function(ctx, parameterTwo, color) {
         parameterTwo.forEach((element) => {
             ctx.fillStyle = color;
             axisX = element.x * graphics.square;
@@ -192,7 +193,9 @@ let graphics = {
             ctx.fillRect(axisX, axisY, graphics.square, graphics.square);
         }) //end of this forEach method
     }, // working on this part. Call function in drawGame
-    */ 
+    
+    //remove the code below and updated to a new function above.
+    /* 
     drawRedApple : function(ctx) {
         game.redApple.forEach((redApple) => {
             axisX = redApple.x * graphics.square;
@@ -226,17 +229,21 @@ let graphics = {
                 ctx.fillRect(axisX, axisY, graphics.square, graphics.square);
         });
     
-    },
+    }, */
     
     //calls all graphic functions
     drawGame: function() {
         let ctx = graphics.canvas.getContext("2d");
         ctx.clearRect(0, 0, graphics.canvas.width, graphics.canvas.height);
         graphics.drawBoard(ctx);
-        graphics.drawRedApple(ctx);
-        graphics.drawRottenApple(ctx);
-        graphics.drawGoldApple(ctx);
-        graphics.drawSnake(ctx);
+        graphics.drawAllGameGraphics(ctx, game.redApple, "#DC143C") // Crimson
+        graphics.drawAllGameGraphics(ctx, game.rottenApple, "#B8860B ") // DarkGoldenRod
+        graphics.drawAllGameGraphics(ctx, game.goldApple, "#FFD700") // Gold
+        graphics.drawAllGameGraphics(ctx, snake.part, "#00FF00") //Lime
+        //graphics.drawRedApple(ctx);
+        //graphics.drawRottenApple(ctx);
+        //graphics.drawGoldApple(ctx);
+        //graphics.drawSnake(ctx);
         
         },
 // end of graphics object literals.
