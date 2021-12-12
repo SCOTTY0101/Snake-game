@@ -183,7 +183,16 @@ let graphics = {
                 axisY += graphics.square;
         });
     },
-
+    
+  /*  drawAllGameGraphics : function(ctx, parameterTwo, color) {
+        parameterTwo.forEach((element) => {
+            ctx.fillStyle = color;
+            axisX = element.x * graphics.square;
+            axisY = element.y * graphics.square;
+            ctx.fillRect(axisX, axisY, graphics.square, graphics.square);
+        }) //end of this forEach method
+    }, // working on this part. Call function in drawGame
+    */ 
     drawRedApple : function(ctx) {
         game.redApple.forEach((redApple) => {
             axisX = redApple.x * graphics.square;
