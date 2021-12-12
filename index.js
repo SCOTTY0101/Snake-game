@@ -162,6 +162,7 @@ let snake = {
                 }
 
     };
+
 let graphics = {
     canvas : document.getElementById("canvas"),
     square : 20,
@@ -187,7 +188,7 @@ let graphics = {
         game.redApple.forEach((redApple) => {
             axisX = redApple.x * graphics.square;
             axisY = redApple.y * graphics.square;
-            ctx.fillStyle = '#DC143C' //'Crimson';
+            ctx.fillStyle = '#DC143C'; //'Crimson'
             ctx.fillRect(axisX, axisY, graphics.square, graphics.square);
 
         })
@@ -196,7 +197,7 @@ let graphics = {
         game.rottenApple.forEach((rottenApple) => { 
            axisX = rottenApple.x * graphics.square;
            axisY = rottenApple.y * graphics.square;
-           ctx.fillStyle = '#B8860B '; //'DarkGoldenRod' medium dark shade of yellow.
+           ctx.fillStyle = '#B8860B'; //'DarkGoldenRod' medium dark shade of yellow.
            ctx.fillRect(axisX, axisY, graphics.square, graphics.square);
         })
     },
@@ -204,7 +205,7 @@ let graphics = {
         game.goldApple.forEach((goldApple) => {
             axisX = goldApple.x * graphics.square;
             axisY = goldApple.y * graphics.square;
-            ctx.fillStyle = '#FFD700'; //Gold
+            ctx.fillStyle = '#FFD700'; //'Gold'
             ctx.fillRect(axisX, axisY, graphics.square, graphics.square);
         })
     },
@@ -212,7 +213,7 @@ let graphics = {
         snake.part.forEach((part) => {
                 axisX = part.x * graphics.square;
                 axisY = part.y * graphics.square;
-                ctx.fillStyle = '#00FF00'; //Lime 
+                ctx.fillStyle = '#00FF00'; //'Lime' 
                 ctx.fillRect(axisX, axisY, graphics.square, graphics.square);
         });
     
