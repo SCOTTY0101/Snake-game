@@ -175,7 +175,7 @@ let graphics = {
                grid = grid.split('');
                     grid.forEach((boarder) => {
                         if (boarder == 'b') {
-                            ctx.fillStyle = 'black';
+                            ctx.fillStyle = "#000"; //black
                             ctx.fillRect(axisX, axisY, graphics.square, graphics.square);
                         }
                         axisX += graphics.square;
@@ -237,7 +237,7 @@ let graphics = {
         ctx.clearRect(0, 0, graphics.canvas.width, graphics.canvas.height);
         graphics.drawBoard(ctx);
         graphics.drawAllGameGraphics(ctx, game.redApple, "#DC143C") // Crimson
-        graphics.drawAllGameGraphics(ctx, game.rottenApple, "#B8860B ") // DarkGoldenRod
+        graphics.drawAllGameGraphics(ctx, game.rottenApple, "#B8860B") // DarkGoldenRod
         graphics.drawAllGameGraphics(ctx, game.goldApple, "#FFD700") // Gold
         graphics.drawAllGameGraphics(ctx, snake.part, "#00FF00") //Lime
         //graphics.drawRedApple(ctx);
