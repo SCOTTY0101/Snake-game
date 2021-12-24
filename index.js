@@ -175,7 +175,7 @@ let graphics = {
                grid = grid.split('');
                     grid.forEach((boarder) => {
                         if (boarder == 'b') {
-                            ctx.fillStyle = 'black';
+                            ctx.fillStyle = '#000'; //black
                             ctx.fillRect(axisX, axisY, graphics.square, graphics.square);
                         }
                         axisX += graphics.square;
