@@ -1,8 +1,6 @@
 //building the classic snake game.
-// x rows >>>>
-
-//y 
-//down the way
+// axisX runs from left of screen to the right.
+// axisY runs from top of screen to the bottom.
 
 
 //building the game board using object (key/value pair).
@@ -232,7 +230,6 @@ let graphics = {
         },
 // end of graphics object literals.
 };
-//graphics.drawGame(); //calls all graphics function.
 
 let gameControl = {
     processInput: function(keyPressed) {
