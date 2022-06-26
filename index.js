@@ -228,8 +228,8 @@ let graphics = {
         graphics.drawSnake(ctx);
         
         },
-// end of graphics object literals.
 };
+// end of graphics object literals.    
 
 let gameControl = {
     processInput: function(keyPressed) {
